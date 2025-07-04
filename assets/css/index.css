@@ -24,7 +24,7 @@ main {
   background: linear-gradient(0deg, var(--primary-color), transparent);
 }
 
-.header__content {
+.header-content {
   margin: auto;
   display: flex;
   flex-direction: column;
@@ -33,55 +33,47 @@ main {
   padding: 0 40px;
 }
 
-.header__channels {
+.header-channels {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 24px;
 }
 
-.header__channel {
+.header-channel {
   object-fit: contain;
 }
 
-.header__title {
+.header-title {
   text-transform: uppercase;
   text-align: center;
   font-size: 3rem;
 }
 
-.header__title--light {
+.header-title {
   display: block;
   font-weight: lighter;
   font-size: 2rem;
 }
 
-.header .text--small {
+.header .text {
   max-width: 300px;
   text-align: center;
 }
 
-.header__button {
-  animation: wiggle 2.2s linear infinite;
+.header-button {
+  animation: wiggle 2.0s linear infinite;
 }
 
-/* Divider */
-
-.divider {
-  width: 70%;
-  max-width: 700px;
-  height: 5px;
-  background: var(--divider-bg-color);
-}
-
+/*ofertas*/
 .offer {
   text-align: center;
-  font-size: 1.25rem;
+  font-size: 1.2rem;
 }
 
 .offer__price {
   font-family: "Raleway", sans-serif;
-  font-size: 2.5rem;
+  font-size: 2.1rem;
   font-weight: bold;
 }
 
@@ -103,7 +95,7 @@ main {
   position: relative;
 }
 
-.subscription__plans {
+.subscription-plans {
   display: flex;
   justify-content: space-around;
   gap: 80px;
@@ -112,7 +104,7 @@ main {
   perspective-origin: top;
 }
 
-.subscription__card {
+.subscription-card {
   background: var(--card-bg-color);
   padding: 40px 60px;
   border-radius: 8px;
@@ -123,25 +115,25 @@ main {
   transition: transform 1s ease-in-out;
 }
 
-.subscription__plans:has(.subscription__card:nth-child(1):hover)
-  .subscription__card:nth-child(2) {
-  transform: rotateY(-45deg);
+.subscription-plans:has(.subscription-card:nth-child(1):hover)
+  .subscription-card:nth-child(1) {
+    transform: scale(110%);
 }
 
-.subscription__plans:has(.subscription__card:nth-child(2):hover)
-  .subscription__card:nth-child(1) {
-  transform: rotateY(45deg);
+.subscription-plans:has(.subscription-card:nth-child(2):hover)
+  .subscription-card:nth-child(2) {
+  transform: scale(110%);
 }
 
-.subscription__description {
+.subscription-description {
   text-align: left;
   list-style: none;
-  font-size: 1.25rem;
+  font-size: 1.0rem;
   margin-bottom: 14px;
   padding-left: 14px;
 }
 
-.subscription__price {
+.subscription-price {
   font-size: 2rem;
   font-family: "Raleway", sans-serif;
   color: var(--secondary-color);
